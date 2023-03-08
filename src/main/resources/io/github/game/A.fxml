@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.game.gameController">
+   <children>
+      <TextField fx:id="enter_name" layoutX="36.0" layoutY="51.0" promptText="Enter Your Name" />
+      <Button fx:id="submit_button" layoutX="201.0" layoutY="51.0" mnemonicParsing="false" onAction="#sub_btn" text="Submit" />
+      <Text fx:id="attempts" layoutX="399.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attempts Left: 2" wrappingWidth="196.66412353515625">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="172.0" layoutY="144.0" stroke="#df0c0c" strokeType="INSIDE" strokeWidth="0.0" text="Press the Button to Genarate the Number !" wrappingWidth="369.37847900390625">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="generate_num" layoutX="297.0" layoutY="156.0" mnemonicParsing="false" onAction="#gen_btn" text="Number" textFill="#dc0c0c" />
+      <Circle fill="DODGERBLUE" layoutX="97.0" layoutY="322.0" onMouseClicked="#count_1" radius="75.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="336.0" layoutY="322.0" onMouseClicked="#count_2" radius="74.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="571.0" layoutY="322.0" onMouseClicked="#count_3" radius="74.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="genaratePompt" alignment="CENTER" layoutX="91.0" layoutY="200.0" prefHeight="26.0" prefWidth="489.0" textFill="#c47373" />
+   </children>
+</AnchorPane>
